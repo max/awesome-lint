@@ -6,7 +6,7 @@ branding:
   color: 'purple'
 inputs:
   filename:
-    description: 'File or directory path to lint'
+    description: 'Filename to lint'
     required: false
 runs:
   using: 'docker'
