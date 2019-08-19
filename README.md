@@ -7,13 +7,10 @@ keep them consistent.
 
 ## Example
 
-```
-workflow "Lint Awesome List" {
-  on = "push"
-  resolves = ["max/awesome-lint"]
-}
-
-action "max/awesome-lint" {
-  uses = "max/awesome-lint@master"
-}
+```yaml
+steps:
+  - uses: actions/checkout@v1.0.0
+  - uses: max/awesome-lint@v2.0.0
+    with:
+      filename: README.md # optional
 ```
