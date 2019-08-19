@@ -1,0 +1,14 @@
+name: 'Awesome Lint'
+description: 'GitHub Action for awesome-lint'
+author: 'Max Schoening <max@max.wtf>'
+branding:
+  icon: 'play'
+  color: 'purple'
+inputs:
+  filename:
+    description: 'File or directory path to lint'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args: ['${{ inputs.filename }}']
