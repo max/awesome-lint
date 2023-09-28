@@ -10,6 +10,8 @@ keep them consistent.
 ```yaml
 steps:
   - uses: actions/checkout@v1.0.0
+    with:
+      fetch-depth: 0 # fetch repo history
   - uses: max/awesome-lint@v2.0.0
     with:
       filename: README.md # optional
